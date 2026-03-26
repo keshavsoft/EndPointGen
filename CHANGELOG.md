@@ -53,3 +53,7 @@ All notable changes to this extension are documented here.
 ## [1.7.1]
 
 * addEndPoint good with both routes and app js files
+
+## [1.8.1]
+
+* removed unwanted

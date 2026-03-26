@@ -37,3 +37,7 @@ All notable changes to this extension are documented here.
 ## [1.3.1]
 
 * app.js after and add api is perfect
+
+## [1.4.1]
+
+* add sub route perfect now next to end point

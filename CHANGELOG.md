@@ -45,3 +45,7 @@ All notable changes to this extension are documented here.
 ## [1.5.1]
 
 * createEndpoint changed success from app.js
+
+## [1.6.1]
+
+* ShowAll perfect from Data folder

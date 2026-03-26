@@ -2,26 +2,25 @@
 
 ## What this extension does
 
-Helps you quickly scaffold and organize JavaScript logic (Init, Listeners, Fetch, etc.) directly from your project files.
+Helps you quickly **scaffold and organize Node.js + Express server-side endpoints** directly from your project files using AI-assisted commands.
 
 ## How to use
 
-1. Open your project in VS Code
-2. Right-click on a file or folder
-3. Select required action (e.g., **Initiate JS**, **Initiate FetchCalls**)
-4. Files/folders will be auto-created and linked
+1. Open your Node.js project in VS Code  
+2. Right-click on a file or folder  
+3. Select required action (e.g., **Initiate Node API**, **CreateEndpoint**)  
+4. Endpoints, routes, and logic will be auto-created and linked  
 
 ## Available Commands
 
-* Initiate JS
-* Initiate addListeners
-* Initiate addBusiness
-* Initiate FetchCalls
-* Initiate fetchFromServer
-* Initiate fetchCommand
+* Initiate Node API → Creates base Express server setup  
+* CreateEndpoint → Adds route in `app.js`  
+* AddSubRoute → Registers sub-routes in `routes.js`  
+* AddEndPoint → Injects endpoint logic into `.js` file  
 
 ## Output
 
-* Creates structured folders (e.g., `DomContentLoaded/`, `FetchCalls/`)
-* Adds starter files like `start.js`, `runAfterDomLoad.js`
-* Automatically wires imports and execution flow
+* Creates structured API flow (e.g., routes, endpoints)  
+* Updates `app.js` and `routes.js` automatically  
+* Injects handler logic into target `.js` files  
+* Maintains modular Express architecture  

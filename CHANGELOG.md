@@ -30,36 +30,6 @@ All notable changes to this extension are documented here.
 
 ---
 
-## [1.2.5]
+## [1.2.1]
 
-### ✅ Added
-
-* Base extension setup
-* Initial command registration
-* Webview integration
-
-### 🔮 Planned
-
-* Schema creation
-* API builder
-* Folder automation
-
-## [1.2.6]
-
-### ✅ with ui
-
-## [1.2.7]
-
-### ✅ with ui perfect for ordermanV5
-
-## [1.11.1]
-
-### ✅ Fetch calls perfect as sibling to addlisteners
-
-## [1.12.1]
-
-### ✅ FetchAsGet perfect
-
-## [1.13.1]
-
-### ✅ FetchAsGet as fetchCommand from user
+* init perfect, next app right click

@@ -33,3 +33,7 @@ All notable changes to this extension are documented here.
 ## [1.2.1]
 
 * init perfect, next app right click
+
+## [1.3.1]
+
+* app.js after and add api is perfect

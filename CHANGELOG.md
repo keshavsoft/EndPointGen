@@ -49,3 +49,7 @@ All notable changes to this extension are documented here.
 ## [1.6.1]
 
 * ShowAll perfect from Data folder
+
+## [1.7.1]
+
+* addEndPoint good with both routes and app js files

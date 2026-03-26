@@ -41,3 +41,7 @@ All notable changes to this extension are documented here.
 ## [1.4.1]
 
 * add sub route perfect now next to end point
+
+## [1.5.1]
+
+* createEndpoint changed success from app.js

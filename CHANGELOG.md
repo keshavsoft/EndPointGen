@@ -61,3 +61,7 @@ All notable changes to this extension are documented here.
 ## [1.10.1]
 
 * editor fix app js perfect with import good
+
+## [1.11.1]
+
+* explorer commands to seperate folder

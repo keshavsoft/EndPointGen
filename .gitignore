@@ -3,4 +3,4 @@ node_modules
 *.vsix
 .env
 
-!media/TemplateVersions/V1/.env
+!src/CommonTemplates/Base/.env

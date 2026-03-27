@@ -69,3 +69,7 @@ All notable changes to this extension are documented here.
 ## [1.12.1]
 
 * app.js import and use fixed in editor only
+
+## [1.13.1]
+
+* app.js perfect with 4 checks last listen also

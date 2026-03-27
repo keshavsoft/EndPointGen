@@ -3,7 +3,7 @@
   "displayName": "EndPointGen",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft AI with voice capture",
-  "version": "1.9.1",
+  "version": "1.10.1",
   "type": "module",
   "capabilities": {
     "untrustedWorkspaces": {
@@ -43,6 +43,10 @@
       {
         "command": "extension.createFullEndpoint",
         "title": "CreateFullEndpoint"
+      },
+      {
+        "command": "extension.forAppJs",
+        "title": "Fix App Js"
       }
     ],
     "menus": {
@@ -71,6 +75,13 @@
           "command": "extension.createFullEndpoint",
           "when": "resourceExtname == .js",
           "group": "navigation@5"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "extension.forAppJs",
+          "when": "resourceExtname == .js",
+          "group": "navigation@1"
         }
       ]
     }

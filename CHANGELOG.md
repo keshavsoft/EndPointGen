@@ -57,3 +57,7 @@ All notable changes to this extension are documented here.
 ## [1.8.1]
 
 * removed unwanted
+
+## [1.10.1]
+
+* editor fix app js perfect with import good

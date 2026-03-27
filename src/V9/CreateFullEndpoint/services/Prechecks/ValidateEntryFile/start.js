@@ -2,7 +2,7 @@
 
 import fs from 'fs';
 import path from 'path';
-import { validateAppJsStructure } from "./appJsStructure.js";
+import { validateAppJsStructure } from "./AppJs/start.js";
 
 const log = (msg) => console.log(`[CreateFullEndpoint][${new Date().toISOString()}] ${msg}`);
 

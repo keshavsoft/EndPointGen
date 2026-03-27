@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 import * as vscode from 'vscode';
 
 export function copyTemplate({ targetPath }) {
-    const templatePath = fileURLToPath(new URL('../templates/Base', import.meta.url));
+    const templatePath = fileURLToPath(new URL('../../CommonTemplates/Base', import.meta.url));
 
     if (!fs.existsSync(templatePath)) {
         vscode.window.showErrorMessage('❌ Server error. Please try again later.');

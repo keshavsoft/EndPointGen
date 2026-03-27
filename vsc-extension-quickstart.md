@@ -24,3 +24,24 @@ Helps you quickly **scaffold and organize Node.js + Express server-side endpoint
 * Updates `app.js` and `routes.js` automatically  
 * Injects handler logic into target `.js` files  
 * Maintains modular Express architecture  
+
+## Fix App.js (Right Click Command) ⭐ NEW
+
+Ensures app.js contains required Express configuration and route registrations.
+
+Useful when:
+
+app.js missing middleware
+routes not connected
+structure broken
+project imported from another source
+
+## How to use
+
+Right-click on app.js
+Select:
+Fix App.js
+## What it updates automatically
+* Ensures Express import exists
+* Ensures body-parser / json middleware added
+* Ensures routes imported correctly

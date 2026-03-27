@@ -65,3 +65,7 @@ All notable changes to this extension are documented here.
 ## [1.11.1]
 
 * explorer commands to seperate folder
+
+## [1.12.1]
+
+* app.js import and use fixed in editor only

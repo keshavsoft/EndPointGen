@@ -3,7 +3,7 @@
   "displayName": "EndPointGen",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft AI with voice capture",
-  "version": "1.16.1",
+  "version": "1.17.1",
   "type": "module",
   "capabilities": {
     "untrustedWorkspaces": {
@@ -106,6 +106,11 @@
           "command": "extension.editor.title.createEndpoint",
           "when": "resourceFilename == app.js",
           "group": "navigation@2"
+        },
+        {
+          "command": "extension.editor.title.addSubRoute",
+          "when": "resourceFilename == routes.js",
+          "group": "navigation@3"
         }
       ]
     }

@@ -81,3 +81,7 @@ All notable changes to this extension are documented here.
 ## [1.15.1]
 
 * editor/title started
+
+## [1.16.1]
+
+* editor/title started Create End point started

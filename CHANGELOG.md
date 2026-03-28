@@ -101,3 +101,7 @@ All notable changes to this extension are documented here.
 ## [1.20.1]
 
 * toast and babel mixed perfcct app fix 2nd check
+
+## [1.21.1]
+
+* app.js fix is perfect with toast and babel in title menu

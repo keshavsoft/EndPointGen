@@ -45,3 +45,42 @@ Commands appear in Explorer based on file context:
   * AddEndPoint → Adds endpoint business logic
 
 ## Project Structure
+
+## How to use
+* Open your Node.js project in VS Code
+* Right-click on a file or folder
+* Select a command from the context menu
+* Extension will automatically generate or update required files
+
+## What this extension does
+
+Helps you quickly scaffold and organize Node.js + Express server-side endpoints directly from your project files using AI-assisted commands.
+
+* It reduces manual work by automatically:
+
+. Creating Express structure
+. Linking routes
+. Injecting endpoint logic
+. Maintaining clean modular architecture
+
+⭐  Fix App.js (Right Click Command)
+
+Ensures app.js contains required Express configuration and route registrations.
+
+Useful when:
+
+* app.js missing middleware
+* routes not connected
+* structure broken
+* project imported from another source
+
+## How to use
+* Right-click on app.js
+
+## Benefits
+
+* Saves development time
+* Standardized Express structure
+* Reduces manual errors
+* Works directly from VS Code right-click menu
+* Keeps project modular and scalable

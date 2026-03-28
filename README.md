@@ -84,3 +84,58 @@ Useful when:
 * Reduces manual errors
 * Works directly from VS Code right-click menu
 * Keeps project modular and scalable
+
+## New Feature – Editor Title Bar Actions (Top Right Buttons)
+
+EndPointGen also provides quick access buttons in the VS Code editor title bar (top-right corner).
+These buttons allow you to create and manage endpoints without right-clicking in Explorer.
+
+
+Available Title Bar Commands
+1. Fix (Button)
+
+Ensures app.js contains required Express configuration and route registrations.
+
+Use when:
+
+middleware missing
+routes not connected
+structure broken
+project copied from another repo
+app.js needs standard structure
+
+How to use:
+
+Open app.js
+Click Fix  button (top right)
+
+2. AddSubRoute
+
+Registers a modular router inside routes.js.
+
+Automatically:
+
+imports router
+links router path
+keeps modular architecture
+
+How to use:
+
+Open routes.js
+Click AddSubRoute button (top right)
+
+3. AddEndPoint
+
+Creates a new Express route entry inside SubRoute
+
+Supports:
+
+GET endpoint
+POST endpoint
+automatic route registration
+
+How to use:
+
+Open app.js
+Click AddEndPoint button (top right)
+Endpoint will be added automatically

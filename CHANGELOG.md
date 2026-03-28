@@ -97,3 +97,7 @@ All notable changes to this extension are documented here.
 ## [1.19.1]
 
 * validator started
+
+## [1.20.1]
+
+* toast and babel mixed perfcct app fix 2nd check

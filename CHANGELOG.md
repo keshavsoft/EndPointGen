@@ -89,3 +89,7 @@ All notable changes to this extension are documented here.
 ## [1.17.1]
 
 * AddSubRoute perfect
+
+## [1.18.1]
+
+* AddEndPoint perfect

@@ -3,7 +3,7 @@
   "displayName": "EndPointGen",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft AI with voice capture",
-  "version": "1.18.1",
+  "version": "1.19.1",
   "type": "module",
   "capabilities": {
     "untrustedWorkspaces": {
@@ -139,5 +139,8 @@
     "autoprefixer": "^10.4.27",
     "eslint": "^9.39.3",
     "postcss": "^8.5.8"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.29.2"
   }
 }

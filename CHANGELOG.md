@@ -93,3 +93,7 @@ All notable changes to this extension are documented here.
 ## [1.18.1]
 
 * AddEndPoint perfect
+
+## [1.19.1]
+
+* validator started

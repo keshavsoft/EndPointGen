@@ -105,3 +105,7 @@ All notable changes to this extension are documented here.
 ## [1.21.1]
 
 * app.js fix is perfect with toast and babel in title menu
+
+## [1.22.1]
+
+* app.js fix is 2 new rules perfect, still rest 2 should be changed from config

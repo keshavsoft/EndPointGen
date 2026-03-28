@@ -77,3 +77,7 @@ All notable changes to this extension are documented here.
 ## [1.14.1]
 
 * templates version started
+
+## [1.15.1]
+
+* editor/title started

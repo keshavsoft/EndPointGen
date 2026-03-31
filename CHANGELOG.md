@@ -125,3 +125,7 @@ All notable changes to this extension are documented here.
 ## [1.25.6]
 
 * 2 for app perfect
+
+## [1.26.1]
+
+* routesjs file title write perfect

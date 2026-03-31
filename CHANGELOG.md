@@ -109,3 +109,7 @@ All notable changes to this extension are documented here.
 ## [1.22.1]
 
 * app.js fix is 2 new rules perfect, still rest 2 should be changed from config
+
+## [1.24.1]
+
+* endpoints.js working more

@@ -45,6 +45,10 @@
         "title": "Fix"
       },
       {
+        "command": "extension.ifEmptyAppJs",
+        "title": "IfEmpty"
+      },
+      {
         "command": "extension.editor.title.createEndpoint",
         "title": "CreateEndpoint"
       },
@@ -85,6 +89,11 @@
       "editor/title": [
         {
           "command": "extension.fixAppJs",
+          "when": "resourceFilename == app.js",
+          "group": "navigation@1"
+        },
+        {
+          "command": "extension.ifEmptyAppJs",
           "when": "resourceFilename == app.js",
           "group": "navigation@1"
         },

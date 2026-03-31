@@ -121,3 +121,7 @@ All notable changes to this extension are documented here.
 ## [1.25.5]
 
 * perfect, now will try empty file
+
+## [1.25.6]
+
+* 2 for app perfect

@@ -117,3 +117,7 @@ All notable changes to this extension are documented here.
 ## [1.25.1]
 
 * still working on appjs fix
+
+## [1.25.5]
+
+* perfect, now will try empty file

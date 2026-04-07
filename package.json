@@ -63,6 +63,14 @@
       {
         "command": "extension.editor.title.routes.writeEndPoint",
         "title": "WriteEndPoint"
+      },
+      {
+        "command": "extension.editor.title.endpoints.get",
+        "title": "Get"
+      },
+      {
+        "command": "extension.editor.title.endpoints.post",
+        "title": "Post"
       }
     ],
     "menus": {
@@ -117,9 +125,14 @@
           "group": "navigation@4"
         },
         {
-          "command": "extension.editor.title.routes.writeEndPoint",
+          "command": "extension.editor.title.endpoints.get",
           "when": "resourceFilename == endpoints.js",
-          "group": "navigation@5"
+          "group": "navigation@6"
+        },
+        {
+          "command": "extension.editor.title.endpoints.post",
+          "when": "resourceFilename == endpoints.js",
+          "group": "navigation@7"
         }
       ]
     }

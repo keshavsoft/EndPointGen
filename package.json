@@ -71,6 +71,10 @@
       {
         "command": "extension.editor.title.endpoints.post",
         "title": "Post"
+      },
+      {
+        "command": "extension.editor.title.endpoints.delete",
+        "title": "delete"
       }
     ],
     "menus": {
@@ -131,6 +135,11 @@
         },
         {
           "command": "extension.editor.title.endpoints.post",
+          "when": "resourceFilename == endpoints.js",
+          "group": "navigation@7"
+        },
+        {
+          "command": "extension.editor.title.endpoints.delete",
           "when": "resourceFilename == endpoints.js",
           "group": "navigation@7"
         }

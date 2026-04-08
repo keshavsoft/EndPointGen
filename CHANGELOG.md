@@ -129,3 +129,7 @@ All notable changes to this extension are documented here.
 ## [1.26.1]
 
 * routesjs file title write perfect
+
+## [1.28.1]
+
+* get and post perfect with prompt and http also from Config folder

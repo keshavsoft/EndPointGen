@@ -1,15 +1,20 @@
+// import ParamsJson from "../../CommonFuncs/params.json" with { type: "json" };
+
 import { readFile } from "./readFile.js";
 import { getNextPk } from "./getNextPk.js";
 import { prepareInsert } from "./prepareInsert.js";
 import { writeFile } from "./writeFile.js";
 
-const filePath = "";
+const StartFunc = ({ inRequestBody }) => {
 
-const startFunc = ({ inRequestBody }) => {
+    const filePath = `./Data/Ledgers.json`;
+
     try {
 
         const data = readFile({ filePath });
+
         const nextPk = getNextPk({ data });
+
         const updatedData = prepareInsert({
             data,
             inRequestBody,
@@ -29,4 +34,4 @@ const startFunc = ({ inRequestBody }) => {
     };
 };
 
-export { startFunc };
+export { StartFunc };

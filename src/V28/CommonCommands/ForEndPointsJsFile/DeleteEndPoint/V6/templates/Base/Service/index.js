@@ -1,1 +1,1 @@
-export { StartFunc } from "./StartFunc.js";
+export { StartFunc } from "./start.js";

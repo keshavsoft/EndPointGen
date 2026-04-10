@@ -1,8 +1,4 @@
-// import ParamsJson from "../../CommonFuncs/params.json" with { type: "json" };
-
 import { readFile } from "./readFile.js";
-import { getNextPk } from "./getNextPk.js";
-import { prepareInsert } from "./prepareInsert.js";
 import { writeFile } from "./writeFile.js";
 
 const filePath = "";
@@ -11,12 +7,6 @@ const StartFunc = ({ inPk }) => {
     let LocalReturnObject = { KTF: false };
 
     try {
-
-        if (!fs.existsSync(filePath)) {
-            LocalReturnObject.JsonData = `key : ${inPk} Row Deleted Successfully`;
-
-            return LocalReturnObject;
-        }
 
         let data = readFile({ filePath });
 

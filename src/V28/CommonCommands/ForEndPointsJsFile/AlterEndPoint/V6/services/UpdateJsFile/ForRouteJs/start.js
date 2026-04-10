@@ -2,8 +2,8 @@ import { updateImports } from "./forImportLine.js";
 import { updateAppUse } from './forUseLine.js';
 
 const updateRouteJsFile = ({ appJsPath }) => {
-    const importLine = `import { postFunc } from "./controller.js";`;
-    const useLine = `router.post('/', postFunc);`;
+    const importLine = `import { alterFunc } from "./controller.js";`;
+    const useLine = `router.post('/:pk', alterFunc);`;
 
     updateImports({ appJsPath, importLine });
 

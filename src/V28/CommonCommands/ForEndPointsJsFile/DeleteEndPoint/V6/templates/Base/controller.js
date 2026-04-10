@@ -1,4 +1,4 @@
-import { StartFunc as Service } from "./Service/startFunc.js";
+import { StartFunc as Service } from "./Service/start.js";
 import { ConflictError, StorageError } from "./errors.js";
 
 const deleteFunc = (req, res) => {

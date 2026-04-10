@@ -5,48 +5,33 @@ import { getNextPk } from "./getNextPk.js";
 import { prepareInsert } from "./prepareInsert.js";
 import { writeFile } from "./writeFile.js";
 
+const StartFunc = ({ inRequestBody }) => {
 
-const StartFunc = ({ inPk }) => {
     const filePath = `./Data/Ledgers.json`;
-    let LocalReturnObject = { KTF: false };
 
     try {
 
-        if (!fs.existsSync(filePath)) {
-            LocalReturnObject.JsonData = `key : ${inPk} Row Deleted Successfully`;
+        const data = readFile({ filePath });
 
-            return LocalReturnObject;
-        }
+        const nextPk = getNextPk({ data });
 
-        let data = readFile({ filePath });
-
-        const LocalFindIndex = data.findIndex(e => e.pk === parseInt(inPk));
-
-        if (LocalFindIndex === -1) {
-            LocalReturnObject.KReason = `Not found data with pk:${inPk}.`;
-            return LocalReturnObject;
-        }
-
-        data.splice(LocalFindIndex, 1);
-
-        data = data.map(item =>
-            Object.fromEntries(
-                Object.entries(item).filter(([key, value]) => value !== null)
-            )
-        );
-        writeFile({
-            filePath,
-            data
+        const updatedData = prepareInsert({
+            data,
+            inRequestBody,
+            nextPk
         });
 
-        LocalReturnObject.KTF = true;
-        LocalReturnObject.JsonData = `Deleted successfully with pk:${inPk}`;
-    } catch (err) {
-        LocalReturnObject.KReason = `Error occurred: ${err.message}`;
-        console.error("Error:", err);
-    }
+        writeFile({
+            filePath,
+            data: updatedData
+        });
 
-    return LocalReturnObject;
+        return nextPk;
+    } finally {
+
+        globalThis.__IMPORT_RUNNING__ = false;
+
+    };
 };
 
 export { StartFunc };

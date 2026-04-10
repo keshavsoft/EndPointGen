@@ -1,11 +1,12 @@
-import { StartFunc as Service } from "./Service/startFunc.js";
+import { startFunc as Service } from "./Service/start.js";
 import { ConflictError, StorageError } from "./errors.js";
 
-const postFunc = (req, res) => {
+const alterFunc = (req, res) => {
     try {
         const inRequestBody = req.body;
+        const inParamsPk = req.params.pk;
 
-        const message = Service({ inRequestBody });
+        const message = Service({ inPk: inParamsPk, inRequestBody });
 
         // res.send(message);
         // res.send(String(message));
@@ -23,4 +24,4 @@ const postFunc = (req, res) => {
     }
 };
 
-export { postFunc };
+export { alterFunc };

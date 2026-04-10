@@ -3,6 +3,7 @@ import * as vscode from 'vscode';
 import { getEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/GetEndPoint/V5/start.js';
 import { postEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/PostEndPoint/V6/start.js';
 import { DeleteEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/DeleteEndPoint/V6/start.js';
+import { AlterEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/AlterEndPoint/V6/start.js';
 
 export function registerAllCommands(context) {
     const getEndPoint = vscode.commands.registerCommand(
@@ -20,9 +21,14 @@ export function registerAllCommands(context) {
         (uri) => DeleteEndPointCommand(context, uri)
     );
 
+    const AlterEndPoint = vscode.commands.registerCommand(
+        'extension.editor.title.endpoints.alter',
+        (uri) => AlterEndPointCommand(context, uri)
+    );
+
     // const getEndPoint = vscode.commands.registerCommand('extension.editor.title.endpoints.get', getEndPointCommand(context));
     // const postEndPoint = vscode.commands.registerCommand('extension.editor.title.endpoints.post', postEndPointCommand(context));
     // const DeleteEndPoint = vscode.commands.registerCommand('extension.editor.title.endpoints.delete', DeleteEndPointCommand(context));
 
-    context.subscriptions.push(getEndPoint, postEndPoint, DeleteEndPoint);
+    context.subscriptions.push(getEndPoint, postEndPoint, DeleteEndPoint, AlterEndPoint);
 };

@@ -133,3 +133,7 @@ All notable changes to this extension are documented here.
 ## [1.28.1]
 
 * get and post perfect with prompt and http also from Config folder
+
+## [1.29.1]
+
+* templatePath made common and deleted

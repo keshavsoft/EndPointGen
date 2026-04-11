@@ -15,19 +15,14 @@ export const createHttpFile = ({ uri, inTargetPath, inTableName }) => {
         .replace(/\/[^/]*$/, "");
 
     const port = process.env.PORT || 3000;
-
+    const fileName = process.env.TABLE_PATH;
     // 🔥 build body from schema
     const body = buildPostPayloadFromSchema({
         workspacePath: workspace,
         inTableName
     });
 
-    const content = `
-POST http://localhost:${port}${relative}
-Content-Type: application/json
-
-${body}
-`;
+    const content = `DELETE http://localhost:${port}${relative}/{pk}`;
 
     fs.writeFileSync(path.join(inTargetPath, "rest.http"), content);
 };

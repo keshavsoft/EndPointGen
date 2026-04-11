@@ -33,6 +33,10 @@
         "title": "Initiate Node API from Env file"
       },
       {
+        "command": "extension.initJsFromConfig",
+        "title": "Initiate Node API from Config folder"
+      },
+      {
         "command": "extension.createFullEndpoint",
         "title": "CreateFullEndpoint"
       },
@@ -92,6 +96,11 @@
           "command": "extension.initJsFromEnv",
           "when": "explorerResourceIsFolder",
           "group": "navigation@2"
+        },
+        {
+          "command": "extension.initJsFromConfig",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@3"
         },
         {
           "command": "extension.createFullEndpoint",

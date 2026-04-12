@@ -3,7 +3,7 @@ import { copyTemplate } from '../services/copyTemplate.js';
 import { runPrechecks } from '../services/precheck.js';
 import { openEntryFile } from '../services/openFile.js';
 
-const templatePath = '../../../../CommonTemplates/BaseWithVersions/V2';
+const templatePath = '../../../../CommonTemplates/BaseWithVersions/V3';
 
 export async function startOrchestration(uri) {
     const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);

@@ -137,3 +137,7 @@ All notable changes to this extension are documented here.
 ## [1.29.1]
 
 * templatePath made common and deleted
+
+## [1.29.2]
+
+* get and post new nice

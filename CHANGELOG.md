@@ -145,3 +145,7 @@ All notable changes to this extension are documented here.
 ## [1.29.3]
 
 * get, find perfect
+
+## [1.29.4]
+
+* get, filter from req.query

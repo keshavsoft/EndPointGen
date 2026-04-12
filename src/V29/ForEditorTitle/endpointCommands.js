@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-import { getEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/GetEndPoint/V7/start.js';
+import { getEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/GetEndPoint/V8/start.js';
 import { postEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/PostEndPoint/V7/start.js';
 // import { DeleteEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/DeleteEndPoint/V6/start.js';
 import { AlterEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/AlterEndPoint/V6/start.js';

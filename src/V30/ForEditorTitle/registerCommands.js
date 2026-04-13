@@ -15,7 +15,7 @@ export function registerAllCommands(context) {
     const appJsIfEmpty = vscode.commands.registerCommand('extension.ifEmptyAppJs', appJsIfEmptyCommand(context));
 
     context.subscriptions.push(CreateEndpoint, fixAppJs, appJsIfEmpty);
-
-    endpointCommands(context);
+    
     routesFileCommands(context);
+    endpointCommands(context);
 };

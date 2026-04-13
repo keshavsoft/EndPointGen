@@ -153,3 +153,7 @@ All notable changes to this extension are documented here.
 ## [1.30.1]
 
 * new from config only
+
+## [1.30.2]
+
+* show all perfect

@@ -3,7 +3,7 @@
   "displayName": "EndPointGen",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft AI with voice capture",
-  "version": "1.30.1",
+  "version": "1.30.2",
   "type": "module",
   "capabilities": {
     "untrustedWorkspaces": {
@@ -73,8 +73,8 @@
         "title": "WriteEndPoint"
       },
       {
-        "command": "extension.editor.title.endpoints.get",
-        "title": "Get"
+        "command": "extension.editor.title.endpoints.showAll",
+        "title": "showAll"
       },
       {
         "command": "extension.editor.title.endpoints.post",
@@ -151,8 +151,8 @@
           "group": "navigation@4"
         },
         {
-          "command": "extension.editor.title.endpoints.get",
-          "when": "resourceFilename == endpoints.js",
+          "command": "extension.editor.title.endpoints.showAll",
+          "when": "resourceFilename == end-points.js",
           "group": "navigation@6"
         },
         {

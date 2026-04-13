@@ -2,6 +2,7 @@ import { finalize, fail } from '../utils/response.js';
 import { copyTemplate } from '../services/copyTemplate.js';
 import { runPrechecks } from '../services/precheck.js';
 import { openEntryFile } from '../services/openFile.js';
+import { extractData } from '../services/extractData.js';
 
 const templatePath = '../../../../CommonTemplates/BaseWithVersions/V3';
 
@@ -19,6 +20,8 @@ export async function startOrchestration(uri) {
             targetPath,
             inTemplatePath: templatePath
         });
+        // ✅ use here
+        await extractData(targetPath);
 
         openEntryFile(targetPath);
 

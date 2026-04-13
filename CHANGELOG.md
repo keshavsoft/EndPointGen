@@ -149,3 +149,7 @@ All notable changes to this extension are documented here.
 ## [1.29.4]
 
 * get, filter from req.query
+
+## [1.30.1]
+
+* new from config only

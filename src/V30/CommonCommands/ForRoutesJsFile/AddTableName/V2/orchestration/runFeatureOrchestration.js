@@ -5,6 +5,7 @@ import * as vscode from 'vscode';
 import { fileURLToPath } from 'url';
 import { copyTemplate } from '../services/copyTemplate.js';
 import { updateRouteJsFile } from '../services/UpdateRouteFile/start.js';
+import { updateConfigFile } from '../services/updateConfig.js';
 
 export async function runFeatureOrchestration({ context, inFileName }) {
     const endpoint = await getEndpoint();
@@ -28,6 +29,11 @@ export async function runFeatureOrchestration({ context, inFileName }) {
     updateRouteJsFile({
         appJsPath: localContext.appJsPath, endpoint,
         inFileName
+    });
+
+    updateConfigFile({
+        inEndpointFolder: localContext.endpointFolder,
+        inTableName: endpoint
     });
 
     return { endpoint };

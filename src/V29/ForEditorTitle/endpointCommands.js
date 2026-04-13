@@ -4,7 +4,7 @@ import { getEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/GetEndP
 import { postEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/PostEndPoint/V7/start.js';
 // import { DeleteEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/DeleteEndPoint/V6/start.js';
 import { AlterEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/AlterEndPoint/V6/start.js';
-import { DeleteEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/DeleteEndPoint/V5/start.js';
+import { DeleteEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/DeleteEndPoint/V7/start.js';
 
 export function registerAllCommands(context) {
     const getEndPoint = vscode.commands.registerCommand(

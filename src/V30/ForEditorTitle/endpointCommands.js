@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 import { showAllCommand } from '../CommonCommands/ForEndPointsJsFile/ShowAll/V11/start.js';
-import { postEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/PostEndPoint/V7/start.js';
+import { insertCommand } from '../CommonCommands/ForEndPointsJsFile/Insert/start.js';
 // import { AlterEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/AlterEndPoint/V6/start.js';
 // import { DeleteEndPointCommand } from '../CommonCommands/ForEndPointsJsFile/DeleteEndPoint/V7/start.js';
 
@@ -12,8 +12,8 @@ export function registerAllCommands(context) {
     );
 
     const postEndPoint = vscode.commands.registerCommand(
-        'extension.editor.title.endpoints.post',
-        (uri) => postEndPointCommand(context, uri)
+        'extension.editor.title.endpoints.insert',
+        (uri) => insertCommand(context, uri)
     );
 
     // const DeleteEndPoint = vscode.commands.registerCommand(

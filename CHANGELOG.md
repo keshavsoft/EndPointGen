@@ -157,3 +157,7 @@ All notable changes to this extension are documented here.
 ## [1.30.2]
 
 * show all perfect
+
+## [1.30.3]
+
+* showAll, Insert perfect

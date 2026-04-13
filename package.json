@@ -3,7 +3,7 @@
   "displayName": "EndPointGen",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft AI with voice capture",
-  "version": "1.30.3",
+  "version": "1.30.4",
   "type": "module",
   "capabilities": {
     "untrustedWorkspaces": {
@@ -162,8 +162,8 @@
         },
         {
           "command": "extension.editor.title.endpoints.delete",
-          "when": "resourceFilename == endpoints.js",
-          "group": "navigation@7"
+          "when": "resourceFilename == end-points.js",
+          "group": "navigation@8"
         },
         {
           "command": "extension.editor.title.endpoints.alter",

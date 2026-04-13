@@ -161,3 +161,7 @@ All notable changes to this extension are documented here.
 ## [1.30.3]
 
 * showAll, Insert perfect
+
+## [1.30.4]
+
+* delete also perfect

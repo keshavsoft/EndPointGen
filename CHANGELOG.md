@@ -165,3 +165,7 @@ All notable changes to this extension are documented here.
 ## [1.30.4]
 
 * delete also perfect
+
+## [1.30.5]
+
+* find also perfect

@@ -185,7 +185,7 @@
         },
         {
           "command": "extension.editor.title.endpoints.alter",
-          "when": "resourceFilename == endpoints.js",
+          "when": "resourceFilename == end-points.js",
           "group": "navigation@7"
         }
       ]

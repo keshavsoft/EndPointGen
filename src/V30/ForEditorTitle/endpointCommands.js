@@ -7,6 +7,7 @@ import { insertCommand } from '../CommonCommands/ForEndPointsJsFile/Insert/start
 import { deleteCommand } from '../CommonCommands/ForEndPointsJsFile/Delete/start.js';
 import { findCommand } from '../CommonCommands/ForEndPointsJsFile/Find/start.js';
 import { filterCommand } from '../CommonCommands/ForEndPointsJsFile/Filter/start.js';
+import { alterCommand } from '../CommonCommands/ForEndPointsJsFile/Alter/start.js';
 
 export function registerAllCommands(context) {
     const getEndPoint = vscode.commands.registerCommand(
@@ -34,11 +35,11 @@ export function registerAllCommands(context) {
         (uri) => filterCommand(context, uri)
     );
 
-    // const AlterEndPoint = vscode.commands.registerCommand(
-    //     'extension.editor.title.endpoints.alter',
-    //     (uri) => AlterEndPointCommand(context, uri)
-    // );
+    const alterEndPoint = vscode.commands.registerCommand(
+        'extension.editor.title.endpoints.alter',
+        (uri) => alterCommand(context, uri)
+    );
 
     context.subscriptions.push(getEndPoint, postEndPoint, DeleteEndPoint,
-        findEndPoint, filterEndPoint);
+        findEndPoint, filterEndPoint, alterEndPoint);
 };

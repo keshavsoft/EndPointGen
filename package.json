@@ -163,11 +163,6 @@
           "group": "navigation@4"
         },
         {
-          "command": "extension.editor.title.endpoints.showAll",
-          "when": "resourceFilename == end-points.js",
-          "group": "navigation@6"
-        },
-        {
           "command": "extension.editor.title.endpoints.insert",
           "when": "resourceFilename == end-points.js",
           "group": "navigation@7"
@@ -176,16 +171,6 @@
           "command": "extension.editor.title.endpoints.delete",
           "when": "resourceFilename == end-points.js",
           "group": "navigation@8"
-        },
-        {
-          "command": "extension.editor.title.endpoints.find",
-          "when": "resourceFilename == end-points.js",
-          "group": "navigation@9"
-        },
-        {
-          "command": "extension.editor.title.endpoints.filter",
-          "when": "resourceFilename == end-points.js",
-          "group": "navigation@10"
         },
         {
           "command": "extension.editor.title.endpoints.alter",

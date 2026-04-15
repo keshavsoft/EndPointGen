@@ -95,6 +95,10 @@
       {
         "command": "extension.editor.title.endpoints.alter",
         "title": "alter"
+      },
+      {
+        "command": "extension.editor.title.endpoints.get",
+        "title": "get"
       }
     ],
     "menus": {
@@ -185,6 +189,11 @@
         },
         {
           "command": "extension.editor.title.endpoints.alter",
+          "when": "resourceFilename == end-points.js",
+          "group": "navigation@10"
+        },
+        {
+          "command": "extension.editor.title.endpoints.get",
           "when": "resourceFilename == end-points.js",
           "group": "navigation@7"
         }

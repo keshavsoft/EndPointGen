@@ -4,7 +4,7 @@ import { runPrechecks } from '../services/precheck.js';
 import { openEntryFile } from '../services/openFile.js';
 import { extractData } from '../services/extractData.js';
 
-const templatePath = '../../../../CommonTemplates/BaseWithVersions/V4';
+const templatePath = '../../../../CommonTemplates/BaseWithVersions/V5';
 
 export async function startOrchestration(uri) {
     const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);

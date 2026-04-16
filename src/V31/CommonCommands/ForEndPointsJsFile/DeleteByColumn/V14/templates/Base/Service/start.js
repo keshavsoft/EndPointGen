@@ -6,33 +6,6 @@ const targetPath = process.env.DataPath;
 const tableName = schemaJson.tableName;
 const tablePath = `${targetPath}/${tableName}`;
 
-const deleteFunc1 = ({ inQuery }) => {
-    try {
-        const data = readFile({ filePath: tablePath });
-
-        const deletedRows = data.filter(row =>
-            Object.entries(inQuery).every(
-                ([key, value]) => String(row[key]) === String(value)
-            )
-        );
-
-        const remainingData = data.filter(row =>
-            !Object.entries(inQuery).every(
-                ([key, value]) => String(row[key]) === String(value)
-            )
-        );
-
-        writeFile({
-            filePath: tablePath,
-            data: remainingData
-        });
-
-        return deletedRows.length;   // 👈 return what got deleted
-    } finally {
-        globalThis.__IMPORT_RUNNING__ = false;
-    }
-};
-
 const deleteFunc = ({ inQuery }) => {
     try {
         const data = readFile({ filePath: tablePath });
@@ -53,10 +26,7 @@ const deleteFunc = ({ inQuery }) => {
             data: remainingData
         });
 
-        return {
-            count: deletedRows.length,
-            rows: deletedRows   // optional but powerful
-        };
+        return deletedRows.length;
     } finally {
         globalThis.__IMPORT_RUNNING__ = false;
     }

@@ -1,9 +1,10 @@
 import * as vscode from 'vscode';
 
 import { insertCommand } from '../CommonCommands/ForEndPointsJsFile/Insert/start.js';
-import { deleteCommand } from '../CommonCommands/ForEndPointsJsFile/Delete/start.js';
+// import { deleteCommand } from '../CommonCommands/ForEndPointsJsFile/Delete/start.js';
 import { alterCommand } from '../CommonCommands/ForEndPointsJsFile/Alter/start.js';
 import { getRegisterCommend } from './ForGetMethods/entryFile.js';
+import { deleteRegisterCommands } from './ForDeleteMethods/entryFile.js';
 
 export function registerAllCommands(context) {
 
@@ -18,20 +19,25 @@ export function registerAllCommands(context) {
         (uri) => insertCommand(context, uri)
     );
 
-    const DeleteEndPoint = vscode.commands.registerCommand(
-        'extension.editor.title.endpoints.delete',
-        (uri) => deleteCommand(context, uri)
-    );
+    // const DeleteEndPoint = vscode.commands.registerCommand(
+    //     'extension.editor.title.endpoints.delete',
+    //     (uri) => deleteCommand(context, uri)
+    // );
 
     const alterEndPoint = vscode.commands.registerCommand(
         'extension.editor.title.endpoints.alter',
         (uri) => alterCommand(context, uri)
     );
 
+
+    const deleteCommands = vscode.commands.registerCommand(
+        'extension.editor.title.endpoints.delete',
+        (uri) => deleteRegisterCommands({ context, uri })
+    );
+
     context.subscriptions.push(
         getEndPoint,
         postEndPoint,
-        DeleteEndPoint,
-        alterEndPoint
+        alterEndPoint, deleteCommands
     );
 }

@@ -173,3 +173,7 @@ All notable changes to this extension are documented here.
 ## [1.30.6]
 
 * filter also perfect
+
+## [1.33.1]
+
+* show from npm module ?

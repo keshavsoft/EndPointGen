@@ -189,3 +189,7 @@ All notable changes to this extension are documented here.
 ## [1.34.3]
 
 * enpoints js, tablename perfect in variable
+
+## [1.34.4]
+
+* show all perfect

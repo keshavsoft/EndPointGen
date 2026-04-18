@@ -185,3 +185,7 @@ All notable changes to this extension are documented here.
 ## [1.34.2]
 
 * folder, tablename split perfect
+
+## [1.34.3]
+
+* enpoints js, tablename perfect in variable

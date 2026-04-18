@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import { copyTemplate } from '../services/copyTemplate.js';
 import { updateRouteJsFile } from '../services/UpdateRouteFile/start.js';
 import { updateConfigFile } from '../services/updateConfig.js';
+import { updateEndPointsFile } from '../services/updateEndPointsFile.js';
 
 export async function runFeatureOrchestration({ context, inFileName }) {
     const { folderName, tableName } = await getFolderAndTable();
@@ -15,7 +16,8 @@ export async function runFeatureOrchestration({ context, inFileName }) {
         ...context,
         endpointFolder: path.join(context.targetPath, folderName),
         routeFilePath: path.join(context.targetPath, folderName),
-        templatePath: fileURLToPath(new URL('../templates/Base', import.meta.url))
+        templatePath: fileURLToPath(new URL('../templates/Base', import.meta.url)),
+        endpointsFilePath: path.join(context.targetPath, folderName, "end-points.js")
     };
 
     // inside runFeatureOrchestration
@@ -34,6 +36,11 @@ export async function runFeatureOrchestration({ context, inFileName }) {
 
     updateConfigFile({
         inEndpointFolder: localContext.endpointFolder,
+        inTableName: tableName
+    });
+
+    updateEndPointsFile({
+        filePath: localContext.endpointsFilePath,
         inTableName: tableName
     });
 

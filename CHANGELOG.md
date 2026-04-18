@@ -197,3 +197,7 @@ All notable changes to this extension are documented here.
 ## [1.34.5]
 
 * show all, insert perfect
+
+## [1.34.6]
+
+* find and filter perfect

@@ -6,8 +6,6 @@ import { findCommand } from '../../CommonCommands/ForEndPointsJsFile/Find/start.
 import { filterCommand } from '../../CommonCommands/ForEndPointsJsFile/Filter/start.js';
 
 export async function getRegisterCommend(context, uri) {
-
-    // get current file uri if not passed
     uri = uri || vscode.window.activeTextEditor?.document?.uri;
 
     const selection = await vscode.window.showQuickPick(

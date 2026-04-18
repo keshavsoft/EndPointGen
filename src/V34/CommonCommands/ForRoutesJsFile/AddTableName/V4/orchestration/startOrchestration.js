@@ -15,13 +15,13 @@ export async function startOrchestration({ uri }) {
             appJsPath: context.appJsPath
         });
 
-        const result = await runFeatureOrchestration({ context, inFileName: fileName });
-        if (!result) return;
+        const folderName = await runFeatureOrchestration({ context, inFileName: fileName });
+        if (!folderName) return;
 
-        openRoutesFile(`${context.targetPath}/${result.endpoint}/${fileName}`);
+        openRoutesFile(`${context.targetPath}/${folderName}/${fileName}`);
 
         finalize({
-            message: `Endpoint '${result.endpoint}' created 🚀`
+            message: `Endpoint '${folderName}' created 🚀`
         });
     } catch (e) { throw e; }
 };

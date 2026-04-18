@@ -181,3 +181,7 @@ All notable changes to this extension are documented here.
 ## [1.34.1]
 
 * kschema from npm 1.6.1 object , next to work on table name
+
+## [1.34.2]
+
+* folder, tablename split perfect

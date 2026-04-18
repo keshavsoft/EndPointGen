@@ -8,16 +8,13 @@ import { updateRouteJsFile } from '../services/UpdateRouteFile/start.js';
 import { updateConfigFile } from '../services/updateConfig.js';
 
 export async function runFeatureOrchestration({ context, inFileName }) {
-    // const endpoint = await getEndpoint();
-    // if (!endpoint) return null;
-
     const { folderName, tableName } = await getFolderAndTable();
 
     // fix inside localContext
     const localContext = {
         ...context,
-        endpointFolder: path.join(context.targetPath, endpoint),
-        routeFilePath: path.join(context.targetPath, endpoint),
+        endpointFolder: path.join(context.targetPath, folderName),
+        routeFilePath: path.join(context.targetPath, folderName),
         templatePath: fileURLToPath(new URL('../templates/Base', import.meta.url))
     };
 
@@ -29,27 +26,19 @@ export async function runFeatureOrchestration({ context, inFileName }) {
     });
 
     updateRouteJsFile({
-        appJsPath: localContext.appJsPath, endpoint,
+        appJsPath: localContext.appJsPath,
+        inTableName: tableName,
+        inFolderName: folderName,
         inFileName
     });
 
     updateConfigFile({
         inEndpointFolder: localContext.endpointFolder,
-        inTableName: endpoint
+        inTableName: tableName
     });
 
-    return { endpoint };
+    return folderName;
 }
-// update only this
-async function getEndpoint() {
-    const value = await vscode.window.showInputBox({ prompt: 'Enter Table name (e.g. TasksTable, in Config/Schemas folder)' });
-    if (!value) return null;
-
-    const clean = value.trim().replace(/[^a-zA-Z0-9-_]/g, '');
-    if (!clean) return null;
-
-    return clean;
-};
 
 async function getFolderAndTable() {
     const input = await vscode.window.showInputBox({

@@ -5,7 +5,8 @@ const fileNameToInsert = "controller.js";
 
 const updateRouteJsFile = ({ appJsPath, endpoint }) => {
     const importLine = `import { postFunc } from "./${endpoint}/${fileNameToInsert}";`;
-    const useLine = `router.post('/${endpoint}', express.json(), postFunc);`;
+    // const useLine = `router.post('/${endpoint}', express.json(), postFunc);`;
+    const useLine = `router.post('/${endpoint}', express.json(), (req, res) => postFunc({ req, res, inTableName: tableName }));`
 
     updateImports({ appJsPath, importLine });
 

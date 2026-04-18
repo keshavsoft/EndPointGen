@@ -1,4 +1,4 @@
-import { startFunc as Service } from "./Service/start.js";
+import { startFunc as Service } from "./service.js";
 import { ConflictError, StorageError } from "./errors.js";
 
 const postFunc = ({ req, res, inTableName }) => {

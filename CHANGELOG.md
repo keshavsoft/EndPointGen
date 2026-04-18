@@ -193,3 +193,7 @@ All notable changes to this extension are documented here.
 ## [1.34.4]
 
 * show all perfect
+
+## [1.34.5]
+
+* show all, insert perfect

@@ -24,6 +24,11 @@
             "type": "text",
             "isInput": true,
             "isConsider": true
+        },
+        {
+            "field": "pk",
+            "title": "pk",
+            "primary": true
         }
     ],
     "data": [],

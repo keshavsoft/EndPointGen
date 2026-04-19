@@ -201,3 +201,7 @@ All notable changes to this extension are documented here.
 ## [1.34.6]
 
 * find and filter perfect
+
+## [1.34.7]
+
+* pkg perfect

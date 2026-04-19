@@ -4,6 +4,8 @@ import { DATA_SOURCE_STRATEGIES } from './dataSourceStrategies.js';
 import { showAllCommand } from '../../CommonCommands/ForEndPointsJsFile/ShowAll/V11/start.js';
 import { findCommand } from '../../CommonCommands/ForEndPointsJsFile/Find/start.js';
 import { filterCommand } from '../../CommonCommands/ForEndPointsJsFile/Filter/start.js';
+import { findColumnsCommand } from '../../CommonCommands/ForEndPointsJsFile/FindColumns/start.js';
+import { filterColumnsCommand } from '../../CommonCommands/ForEndPointsJsFile/FilterColumns/start.js';
 
 export async function getRegisterCommend(context, uri) {
     uri = uri || vscode.window.activeTextEditor?.document?.uri;
@@ -37,6 +39,16 @@ async function handleStrategy({ strategy, context, uri }) {
         case "Filter": {
 
             return filterCommand(context, uri);
+        };
+
+        case "FindColumns": {
+
+            return findColumnsCommand(context, uri);
+        };
+
+        case "FilterColumns": {
+
+            return filterColumnsCommand(context, uri);
         };
 
         default:

@@ -11,5 +11,13 @@ export const DATA_SOURCE_STRATEGIES = [
     {
         id: "Filter",
         label: "Filter : get all matched records from table"
+    },
+    {
+        id: "FindColumns",
+        label: "FindColumns : get single record from table searching columns"
+    },
+    {
+        id: "FilterColumns",
+        label: "FilterColumns : get all matched records from table searching columns"
     }
 ];

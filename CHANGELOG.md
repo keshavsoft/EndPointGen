@@ -205,3 +205,7 @@ All notable changes to this extension are documented here.
 ## [1.34.7]
 
 * pkg perfect
+
+## [1.34.8]
+
+* 2 deletes perfect

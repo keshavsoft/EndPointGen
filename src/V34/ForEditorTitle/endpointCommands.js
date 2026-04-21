@@ -30,7 +30,6 @@ export function registerAllCommands(context) {
         (uri) => alterCommand(context, uri)
     );
 
-
     const deleteCommands = vscode.commands.registerCommand(
         'extension.editor.title.endpoints.delete',
         (uri) => deleteRegisterCommands({ context, uri })

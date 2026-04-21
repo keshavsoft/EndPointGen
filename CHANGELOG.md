@@ -209,3 +209,7 @@ All notable changes to this extension are documented here.
 ## [1.34.8]
 
 * 2 deletes perfect
+
+## [1.35.1]
+
+* wizard started

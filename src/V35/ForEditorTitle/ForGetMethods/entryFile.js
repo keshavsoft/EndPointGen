@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 import { DATA_SOURCE_STRATEGIES } from './dataSourceStrategies.js';
-import { showAllCommand } from '../../CommonCommands/ForEndPointsJsFile/ShowAll/V11/start.js';
+import { showAllCommand } from '../../CommonCommands/ForEndPointsJsFile/ShowAll/V12/start.js';
 import { findCommand } from '../../CommonCommands/ForEndPointsJsFile/Find/start.js';
 import { filterCommand } from '../../CommonCommands/ForEndPointsJsFile/Filter/start.js';
 import { findColumnsCommand } from '../../CommonCommands/ForEndPointsJsFile/FindColumns/start.js';

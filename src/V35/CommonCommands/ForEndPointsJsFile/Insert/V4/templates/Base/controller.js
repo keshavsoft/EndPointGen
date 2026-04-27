@@ -5,9 +5,9 @@ const postFunc = async ({ req, res, inTableName }) => {
     try {
         const inRequestBody = req.body;
 
-        const message = await Service({ inRequestBody, inTableName });
+        const fromService = await Service({ inRequestBody, inTableName });
 
-        res.type("text/plain").send(String(message))
+        res.type("application/json").send(fromService);
     } catch (err) {
 
         if (err instanceof ConflictError)

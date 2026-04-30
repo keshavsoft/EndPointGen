@@ -6,15 +6,14 @@ import { extractData } from '../services/extractData.js';
 
 const templatePath = '../../../../CommonTemplates/BaseWithVersions/V8';
 
-export async function startOrchestration(uri) {
-    const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);
+export async function startOrchestration({ inTargetPath }) {
     try {
-        const targetPath = uri.fsPath; log('Path resolved');
+        const targetPath = inTargetPath;
 
         runPrechecks({
             targetPath,
             inTemplatePath: templatePath
-        }); log('Prechecks passed');
+        });
 
         copyTemplate({
             targetPath,

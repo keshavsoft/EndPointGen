@@ -213,3 +213,7 @@ All notable changes to this extension are documented here.
 ## [1.35.1]
 
 * wizard started
+
+## [1.35.5]
+
+* explore command start using kschema-cli, still trying

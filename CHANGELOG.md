@@ -217,3 +217,7 @@ All notable changes to this extension are documented here.
 ## [1.35.5]
 
 * explore command start using kschema-cli, still trying
+
+## [1.35.6]
+
+* started using cli perfect

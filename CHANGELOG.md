@@ -221,3 +221,7 @@ All notable changes to this extension are documented here.
 ## [1.35.6]
 
 * started using cli perfect
+
+## [1.35.7]
+
+* working on app js 

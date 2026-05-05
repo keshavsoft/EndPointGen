@@ -3,7 +3,7 @@
   "displayName": "EndPointGen",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft AI with voice capture",
-  "version": "1.36.5",
+  "version": "1.36.6",
   "type": "module",
   "capabilities": {
     "untrustedWorkspaces": {
@@ -221,6 +221,6 @@
   },
   "dependencies": {
     "@babel/parser": "^7.29.2",
-    "@keshavsoft/kschema-cli": "^1.12.13"
+    "@keshavsoft/kschema-cli": "^1.12.14"
   }
 }

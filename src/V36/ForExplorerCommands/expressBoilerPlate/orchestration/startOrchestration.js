@@ -1,5 +1,5 @@
-import { tally } from "@keshavsoft/kschema-cli";
+import { express } from "@keshavsoft/kschema-cli";
 
 export async function startOrchestration({ inTargetPath }) {
-    await tally(inTargetPath);
+    await express(inTargetPath);
 };

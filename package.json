@@ -3,7 +3,7 @@
   "displayName": "EndPointGen",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft AI with voice capture",
-  "version": "1.36.3",
+  "version": "1.36.4",
   "type": "module",
   "capabilities": {
     "untrustedWorkspaces": {
@@ -33,12 +33,12 @@
         "title": "Initiate Node API from Env file"
       },
       {
-        "command": "extension.initJsFromConfig",
-        "title": "Initiate Node API from Config folder"
-      },
-      {
         "command": "extension.expressBoilerPlate",
         "title": "Scaffold Express Boilerplate"
+      },
+      {
+        "command": "extension.tallyBoilerPlate",
+        "title": "Scaffold Express Boilerplate for tally integration"
       },
       {
         "command": "extension.createFullEndpoint",
@@ -117,6 +117,11 @@
           "group": "navigation@0"
         },
         {
+          "command": "extension.tallyBoilerPlate",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@0"
+        },
+        {
           "command": "extension.initJs",
           "when": "explorerResourceIsFolder",
           "group": "navigation@1"
@@ -125,11 +130,6 @@
           "command": "extension.initJsFromEnv",
           "when": "explorerResourceIsFolder",
           "group": "navigation@2"
-        },
-        {
-          "command": "extension.initJsFromConfig",
-          "when": "explorerResourceIsFolder",
-          "group": "navigation@3"
         },
         {
           "command": "extension.createFullEndpoint",

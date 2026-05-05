@@ -229,3 +229,7 @@ All notable changes to this extension are documented here.
 ## [1.36.1]
 
 * tally from cli perfect
+
+## [1.36.2]
+
+* archive folder started, and tested perfect ignored from .vscodeignore

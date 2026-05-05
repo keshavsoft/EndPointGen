@@ -3,7 +3,7 @@
   "displayName": "EndPointGen",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft AI with voice capture",
-  "version": "1.35.7",
+  "version": "1.36.1",
   "type": "module",
   "capabilities": {
     "untrustedWorkspaces": {
@@ -35,6 +35,10 @@
       {
         "command": "extension.initJsFromConfig",
         "title": "Initiate Node API from Config folder"
+      },
+      {
+        "command": "extension.expressBoilerPlate",
+        "title": "Scaffold Express Boilerplate"
       },
       {
         "command": "extension.createFullEndpoint",
@@ -107,6 +111,11 @@
     ],
     "menus": {
       "explorer/context": [
+        {
+          "command": "extension.expressBoilerPlate",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@0"
+        },
         {
           "command": "extension.initJs",
           "when": "explorerResourceIsFolder",
@@ -212,6 +221,6 @@
   },
   "dependencies": {
     "@babel/parser": "^7.29.2",
-    "@keshavsoft/kschema-cli": "^1.12.4"
+    "@keshavsoft/kschema-cli": "^1.12.9"
   }
 }

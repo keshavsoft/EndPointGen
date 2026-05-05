@@ -225,3 +225,7 @@ All notable changes to this extension are documented here.
 ## [1.35.7]
 
 * working on app js 
+
+## [1.36.1]
+
+* tally from cli perfect

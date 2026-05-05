@@ -237,3 +237,7 @@ All notable changes to this extension are documented here.
 ## [1.36.4]
 
 * express and tally perfect in explorer
+
+## [1.36.5]
+
+* express and tally better ux

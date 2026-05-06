@@ -1,12 +1,12 @@
-import { deleteItem as Service } from "./Service.js";
+import { startFunc as Service } from "./Service/start.js";
 import { ConflictError, StorageError } from "./errors.js";
 
-const alterFunc = (req, res, inTableName) => {
+const alterFunc = (req, res) => {
     try {
         const inRequestBody = req.body;
         const inParamsPk = req.params.pk;
 
-        const message = Service({ inPk: inParamsPk, inRequestBody, inTableName });
+        const message = Service({ inPk: inParamsPk, inRequestBody });
 
         // res.send(message);
         // res.send(String(message));

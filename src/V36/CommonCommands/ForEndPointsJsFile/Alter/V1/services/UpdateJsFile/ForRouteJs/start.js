@@ -8,7 +8,7 @@ const updateRouteJsFile = ({ appJsPath, endpoint }) => {
     const smallLetterStart = str[0].toLowerCase() + str.slice(1);
 
     const importLine = `import { alterFunc } from "./${endpoint}/${fileNameToInsert}";`;
-    const useLine = `router.post('/${endpoint}/:pk', (req, res) => ${smallLetterStart}Func({ req, res, inTableName: tableName }));`
+    const useLine = `router.post('/${endpoint}/:pk',express.json(), (req, res) => ${smallLetterStart}Func({ req, res, inTableName: tableName }));`
 
     updateImports({ appJsPath, importLine });
 

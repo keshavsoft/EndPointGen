@@ -1,7 +1,5 @@
 import * as vscode from 'vscode';
 
-// import { insertCommand } from '../CommonCommands/ForEndPointsJsFile/Insert/start.js';
-// import { deleteCommand } from '../CommonCommands/ForEndPointsJsFile/Delete/start.js';
 import { alterCommand } from '../CommonCommands/ForEndPointsJsFile/Alter/start.js';
 import { getRegisterCommend } from './ForGetMethods/entryFile.js';
 import { deleteRegisterCommands } from './ForDeleteMethods/entryFile.js';

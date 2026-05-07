@@ -1,14 +1,11 @@
-import { deleteByColumn } from "./service.js";
+import { deleteFunc as deleteService } from "./Service/start.js";
 import { ConflictError, StorageError } from "./errors.js";
 
-const deleteByColumnFunc = ({ req, res, inTableName }) => {
+const deleteByColumnFunc = (req, res) => {
     try {
-        const inRequestBody = req.body;
+        const inQuery = req.query;
 
-        const deletedRows = deleteByColumn({
-            inRequestBody,
-            inTableName
-        });
+        const deletedRows = deleteService({ inQuery });
 
         res.type("application/json").send(deletedRows)
     } catch (err) {

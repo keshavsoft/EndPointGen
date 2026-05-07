@@ -3,10 +3,10 @@ import { ConflictError, StorageError } from "./errors.js";
 
 const deleteByColumnFunc = ({ req, res, inTableName }) => {
     try {
-        const inRequestBody = req.body;
+        const inQuery = req.query;
 
         const deletedRows = deleteByColumn({
-            inRequestBody,
+            inQuery,
             inTableName
         });
 

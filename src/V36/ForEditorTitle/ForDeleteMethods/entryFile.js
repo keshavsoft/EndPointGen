@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 
 import { DATA_SOURCE_STRATEGIES } from './dataSourceStrategies.js';
 import { startOrchestration as deletePkCommand } from '../../CommonCommands/ForEndPointsJsFile/Delete/V14/orchestration/startOrchestration.js';
-import { startOrchestration as deleteByColumnCommand } from '../../CommonCommands/ForEndPointsJsFile/DeleteByColumn/V15/orchestration/startOrchestration.js';
+import { startOrchestration as deleteByColumnCommand } from '../../CommonCommands/ForEndPointsJsFile/DeleteByColumn/V16/orchestration/startOrchestration.js';
 
 export async function deleteRegisterCommands({ context, uri }) {
 
